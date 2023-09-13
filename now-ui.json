@@ -1,0 +1,37 @@
+{
+	"components": {
+	    "neis-shift-chevron": {
+	        "innerComponents": [],
+			"properties": [
+				{
+				  "name": "table",
+				  "label": "table",
+				  "description": "Name of the table to pick caller from",
+				  "readOnly": false,
+				  "fieldType": "table_name",
+				  "required": true,
+				  "defaultValue": "@context.props.table",
+				  "typeMetadata": {}
+				},
+				{
+				  "name": "sysId",
+				  "label": "sysId",
+				  "description": "The unique identifier for the record",
+				  "readOnly": false,
+				  "fieldType": "string",
+				  "required": true,
+				  "defaultValue":"@context.props.sysId",
+				  "typeMetadata": {}
+				}
+			],
+			"uiBuilder": {
+				"associatedTypes": ["global.core", "global.landing-page"],
+				"label": "Shift Chevron",
+				"icon": "document-outline",
+				"description": "Shows a visual representation for percentgage of activity completion.",
+				"category": "primitives"
+			}
+	    }
+	},
+	"scopeName": "x_neis_dxocm_shift"
+}
